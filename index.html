@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-NI">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijeras</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-lg p-6 text-center max-w-md">
+        <h1 class="text-2xl font-bold mb-4 text-gray-800">Bienvenidos a<br>
+            Piedra, papel o tijeras</h1>
+
+        <!-- Botones de la computadora -->
+        <div class="flex justify-around mb-6 computadora">
+            <button id="cpu-piedra" class="text-4xl text-gray-400">
+                <i class="fas fa-question"></i>
+            </button>
+            <button id="cpu-papel" class="text-4xl text-gray-400">
+                <i class="fas fa-question"></i>
+            </button>
+            <button id="cpu-tijeras" class="text-4xl text-gray-400">
+                <i class="fas fa-question"></i>
+            </button>
+        </div>
+
+        <!-- Área del enfrentamiento -->
+        <div class="relative flex justify-center items-center h-24 mb-6">
+            <!-- Área para mostrar el enfrentamiento -->
+            <div id="enfrentamiento" class="absolute flex-col-reverse gap-4"></div>
+        </div>
+
+
+        <!-- Botones del jugador -->
+        <div class="flex justify-around mb-6 jugador">
+            <button id="piedra" class="text-4xl text-blue-500 hover:text-blue-700 transition">
+                <i class="fas fa-hand-rock"></i>
+            </button>
+            <button id="papel" class="text-4xl text-green-500 hover:text-green-700 transition">
+                <i class="fas fa-hand-paper"></i>
+            </button>
+            <button id="tijeras" class="text-4xl text-red-500 hover:text-red-700 transition">
+                <i class="fas fa-hand-scissors"></i>
+            </button>
+        </div>
+        <!-- Resultados -->
+        <div id="resultado" class="text-lg font-medium text-gray-700">
+            ¡Elige una opción para empezar a jugar!
+        </div>
+        <h3 class="text-left mt-3">by nanypoe</h3>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

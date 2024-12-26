@@ -1,0 +1,61 @@
+@keyframes move-to-center {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(50%, -50%) scale(1.5);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.move-to-center {
+    animation: move-to-center 1s ease-in-out forwards;
+}
+
+#enfrentamiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.empate {
+    color: #b9b610; /* Amarillo */
+animation: shake 0.5s;
+}
+
+.ganador {
+    color: #10b981; /* Verde */
+    animation: pulse 1s infinite;
+}
+
+.perdedor {
+    color: #ef4444; /* Rojo */
+    animation: shake 0.5s;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
